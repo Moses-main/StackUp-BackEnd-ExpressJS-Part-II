@@ -25,6 +25,8 @@ app.use(
   })
 );
 
+app.use(morgan("dev"));
+
 // Routes
 app.get("/", (req, res) => {
   res.render("welcome");
